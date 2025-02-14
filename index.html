@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Affordable and globally recognized medical degrees">
+    <meta name="keywords" content="MBBS Abroad, Study Medicine, Medical Universities, Affordable MBBS">
+    <meta name="author" content="Study MBBS Abroad Team">
+    <title>Study MBBS Abroad</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'XXXXXXXXXXXXXXX');
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-20">
+        <h1 class="text-4xl font-bold">Apply Now for MBBS Abroad</h1>
+        <p class="mt-4 text-lg">Start your journey towards a medical career today!</p>
+        <a href="#lead-form" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">Get
+            Started</a>
+    </section>
+
+    <!-- Why Study MBBS Abroad? -->
+    <section class="max-w-5xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Why Study MBBS Abroad?</h2>
+        <ul class="list-disc list-inside">
+            <li>Affordable tuition fees</li>
+            <li>Globally recognized degrees</li>
+            <li>English-medium programs</li>
+            <li>High-quality education & infrastructure</li>
+        </ul>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="max-w-5xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Top Countries for MBBS</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-white rounded-lg shadow">Russia</div>
+            <div class="p-4 bg-white rounded-lg shadow">Uzbekistan</div>
+            <div class="p-4 bg-white rounded-lg shadow">Kazakhstan</div>
+            <div class="p-4 bg-white rounded-lg shadow">Philippines</div>
+            <div class="p-4 bg-white rounded-lg shadow">Georgia</div>
+            <div class="p-4 bg-white rounded-lg shadow">Kyrgyzstan</div>
+            <div class="p-4 bg-white rounded-lg shadow">Egypt</div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="max-w-5xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Admission Process & Eligibility</h2>
+        <ol class="list-decimal list-inside">
+            <li>Choose a country & university</li>
+            <li>Submit application & required documents</li>
+            <li>Receive admission letter</li>
+            <li>Apply for a student visa</li>
+            <li>Travel & begin your studies</li>
+        </ol>
+    </section>
+
+    <!-- Lead Form -->
+    <section id="lead-form" class="bg-white p-6 max-w-lg mx-auto shadow-md rounded-lg">
+        <h2 class="text-2xl font-bold mb-4">Get a Free Consultation</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded mb-2" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded mb-2" required>
+            <input type="tel" id="phone" placeholder="Your Phone" class="w-full p-2 border rounded mb-2" required>
+            <select id="country" class="w-full p-2 border rounded mb-2" required>
+                <option value="">Select Preferred Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+        </form>
+    </section>
+    
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value.trim();
+            let email = document.getElementById('email').value.trim();
+            let phone = document.getElementById('phone').value.trim();
+            let country = document.getElementById('country').value;
+
+            if (!name || !email || !phone || !country) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+
+</html>
+
+<!--
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get form values and sanitize them
+        $name = htmlspecialchars(strip_tags($_POST['name']));
+        $email = htmlspecialchars(strip_tags($_POST['email']));
+        $phone = htmlspecialchars(strip_tags($_POST['phone']));
+        $country = htmlspecialchars(strip_tags($_POST['country']));
+    
+        // Validate fields (basic validation)
+        if (empty($name) || empty($email) || empty($phone) || empty($country)) {
+            echo json_encode(["status" => "error", "message" => "All fields are required."]);
+            exit;
+        }
+    
+        // Email where form data should be sent
+        $to = "your-email@example.com"; // Change this to your actual email
+        $subject = "New MBBS Abroad Inquiry";
+        $message = "Name: $name\nEmail: $email\nPhone: $phone\nPreferred Country: $country";
+        $headers = "From: noreply@yourdomain.com"; // Set your domain email
+    
+        // Send email (disable for local testing)
+        if (mail($to, $subject, $message, $headers)) {
+            echo json_encode(["status" => "success", "message" => "Form submitted successfully."]);
+        } else {
+            echo json_encode(["status" => "error", "message" => "Error submitting form."]);
+        }
+    }
+    ?>
+-->
