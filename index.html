@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,61 +34,100 @@
     <script defer src="script.js"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-50">
 
-    <!-- Hero Section -->
-    <section class="bg-blue-600 text-white text-center py-20">
-        <h1 class="text-4xl font-bold">Apply Now for MBBS Abroad</h1>
-        <p class="mt-4 text-lg">Start your journey towards a medical career today!</p>
-        <a href="#lead-form" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">Get
+    <!-- Hero Section with Image Slider -->
+    <section class="relative w-full h-screen overflow-hidden">
+        <!-- Image Slider -->
+        <div class="absolute inset-0 w-full h-full">
+            <div class="slider absolute inset-0 w-full h-full">
+                <img src="./image1.jpg"
+                    class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+                <img src="./image2.jpg"
+                    class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+                <img src="./image3.jpg"
+                    class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+            </div>
+        </div>
+
+        <!-- Dark Overlay for better readability -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Text Content on Top -->
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center">
+            <h1 class="text-5xl font-bold">Apply Now for MBBS Abroad</h1>
+            <p class="mt-4 text-lg">Start your journey towards a medical career today!</p>
+            <a href="#lead-form"
+            class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">Get
             Started</a>
+        </div>
     </section>
 
+
+
     <!-- Why Study MBBS Abroad? -->
-    <section class="max-w-5xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Why Study MBBS Abroad?</h2>
-        <ul class="list-disc list-inside">
-            <li>Affordable tuition fees</li>
-            <li>Globally recognized degrees</li>
-            <li>English-medium programs</li>
-            <li>High-quality education & infrastructure</li>
+    <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Why Study MBBS Abroad?</h2>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>✅ Affordable tuition fees</li>
+            <li>✅ Globally recognized degrees</li>
+            <li>✅ English-medium programs</li>
+            <li>✅ High-quality education & infrastructure</li>
         </ul>
     </section>
 
     <!-- Top Countries -->
-    <section class="max-w-5xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Top Countries for MBBS</h2>
+    <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Top Countries for MBBS</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="p-4 bg-white rounded-lg shadow">Russia</div>
-            <div class="p-4 bg-white rounded-lg shadow">Uzbekistan</div>
-            <div class="p-4 bg-white rounded-lg shadow">Kazakhstan</div>
-            <div class="p-4 bg-white rounded-lg shadow">Philippines</div>
-            <div class="p-4 bg-white rounded-lg shadow">Georgia</div>
-            <div class="p-4 bg-white rounded-lg shadow">Kyrgyzstan</div>
-            <div class="p-4 bg-white rounded-lg shadow">Egypt</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇷🇺 Russia</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇺🇿 Uzbekistan</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇰🇿 Kazakhstan</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇵🇭 Philippines</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇬🇪 Georgia</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇰🇬 Kyrgyzstan</div>
+            <div
+                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
+                🇪🇬 Egypt</div>
         </div>
     </section>
 
     <!-- Admission Process -->
-    <section class="max-w-5xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Admission Process & Eligibility</h2>
-        <ol class="list-decimal list-inside">
-            <li>Choose a country & university</li>
-            <li>Submit application & required documents</li>
-            <li>Receive admission letter</li>
-            <li>Apply for a student visa</li>
-            <li>Travel & begin your studies</li>
+    <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Admission Process & Eligibility</h2>
+        <ol class="list-decimal list-inside text-gray-600 space-y-2">
+            <li>📌 Choose a country & university</li>
+            <li>📌 Submit application & required documents</li>
+            <li>📌 Receive admission letter</li>
+            <li>📌 Apply for a student visa</li>
+            <li>📌 Travel & begin your studies</li>
         </ol>
     </section>
 
     <!-- Lead Form -->
-    <section id="lead-form" class="bg-white p-6 max-w-lg mx-auto shadow-md rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">Get a Free Consultation</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded mb-2" required>
-            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded mb-2" required>
-            <input type="tel" id="phone" placeholder="Your Phone" class="w-full p-2 border rounded mb-2" required>
-            <select id="country" class="w-full p-2 border rounded mb-2" required>
+    <section id="lead-form" class="bg-white p-8 max-w-lg mx-auto shadow-md rounded-lg mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700 text-center">Get a Free Consultation</h2>
+        <form id="contactForm" class="space-y-4">
+            <input type="text" id="name" placeholder="Your Name"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" required>
+            <input type="email" id="email" placeholder="Your Email"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" required>
+            <input type="tel" id="phone" placeholder="Your Phone"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" required>
+            <select id="country" class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300"
+                required>
                 <option value="">Select Preferred Country</option>
                 <option>Russia</option>
                 <option>Uzbekistan</option>
@@ -98,9 +137,30 @@
                 <option>Kyrgyzstan</option>
                 <option>Egypt</option>
             </select>
-            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+            <button type="submit"
+                class="w-full bg-blue-600 text-white p-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Submit</button>
         </form>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let slides = document.querySelectorAll(".slider img");
+            let currentIndex = 0;
+    
+            function showNextSlide() {
+                slides[currentIndex].classList.remove("opacity-100");
+                slides[currentIndex].classList.add("opacity-0");
+    
+                currentIndex = (currentIndex + 1) % slides.length;
+    
+                slides[currentIndex].classList.remove("opacity-0");
+                slides[currentIndex].classList.add("opacity-100");
+            }
+    
+            slides[0].classList.add("opacity-100"); // Make the first image visible
+            setInterval(showNextSlide, 4000); // Change slide every 4 seconds
+        });
+    </script>
     
 
     <script>
@@ -112,12 +172,13 @@
             let country = document.getElementById('country').value;
 
             if (!name || !email || !phone || !country) {
-                alert('Please fill in all fields.');
+                alert('⚠️ Please fill in all fields.');
                 return;
             }
-            alert('Form submitted successfully!');
+            alert('✅ Form submitted successfully!');
         });
     </script>
+
 </body>
 
 </html>
