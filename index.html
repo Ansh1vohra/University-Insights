@@ -32,9 +32,13 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-[Montserrat]">
 
     <!-- Hero Section with Image Slider -->
     <section class="relative w-full h-screen overflow-hidden">
@@ -63,18 +67,49 @@
         </div>
     </section>
 
-
-
     <!-- Why Study MBBS Abroad? -->
-    <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
-        <h2 class="text-2xl font-bold mb-4 text-blue-700">Why Study MBBS Abroad?</h2>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-            <li>✅ Affordable tuition fees</li>
-            <li>✅ Globally recognized degrees</li>
-            <li>✅ English-medium programs</li>
-            <li>✅ High-quality education & infrastructure</li>
-        </ul>
+    <section class="max-w-7xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 text-center">Why Study MBBS Abroad?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="flex items-start space-x-3 p-4 bg-gray-100 rounded-lg shadow-sm">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-dollar-sign"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Affordable Tuition Fees</h3>
+                    <p class="text-gray-600">Experience high-quality education without breaking the bank.</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-3 p-4 bg-gray-100 rounded-lg shadow-sm">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-globe"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Globally Recognized Degrees</h3>
+                    <p class="text-gray-600">Earn a degree that is respected worldwide.</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-3 p-4 bg-gray-100 rounded-lg shadow-sm">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-comments"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">English-Medium Programs</h3>
+                    <p class="text-gray-600">Study in English and communicate effectively with peers.</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-3 p-4 bg-gray-100 rounded-lg shadow-sm">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-building"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">High-Quality Education & Infrastructure</h3>
+                    <p class="text-gray-600">Benefit from state-of-the-art facilities.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <!-- Top Countries Section -->
     <section class="py-10 bg-gray-100">
@@ -138,15 +173,54 @@
 
         </div>
     </section>
-    <!-- Admission Process -->
     <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
-        <h2 class="text-2xl font-bold mb-4 text-blue-700">Admission Process & Eligibility</h2>
-        <ol class="list-decimal list-inside text-gray-600 space-y-2">
-            <li>📌 Choose a country & university</li>
-            <li>📌 Submit application & required documents</li>
-            <li>📌 Receive admission letter</li>
-            <li>📌 Apply for a student visa</li>
-            <li>📌 Travel & begin your studies</li>
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 text-center">Admission Process & Eligibility</h2>
+        <ol class="list-decimal list-inside space-y-4">
+            <li class="flex items-start space-x-3">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-map-signs"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold">Choose a Country & University</h3>
+                    <p class="text-gray-600">Research and select the best options for your medical education.</p>
+                </div>
+            </li>
+            <li class="flex items-start space-x-3">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-file-alt"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold">Submit Application & Required Documents</h3>
+                    <p class="text-gray-600">Prepare and send your application along with necessary documents.</p>
+                </div>
+            </li>
+            <li class="flex items-start space-x-3">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-envelope"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold">Receive Admission Letter</h3>
+                    <p class="text-gray-600">Wait for your acceptance letter from the chosen university.</p>
+                </div>
+            </li>
+            <li class="flex items-start space-x-3">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-passport"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold">Apply for a Student Visa</h3>
+                    <p class="text-gray-600">Complete visa requirements to study abroad.</p>
+                </div>
+            </li>
+            <li class="flex items-start space-x-3">
+                <div class="text-blue-600 text-3xl">
+                    <i class="fas fa-plane"></i> <!-- Font Awesome icon -->
+                </div>
+                <div>
+                    <h3 class="font-semibold">Travel & Begin Your Studies</h3>
+                    <p class="text-gray-600">Prepare for your journey and start your medical education adventure!</p>
+                </div>
+            </li>
         </ol>
     </section>
 
@@ -169,7 +243,6 @@
                 <option>Philippines</option>
                 <option>Georgia</option>
                 <option>Kyrgyzstan</option>
-                <option>Egypt</option>
             </select>
             <button type="submit"
                 class="w-full bg-blue-600 text-white p-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Submit</button>
