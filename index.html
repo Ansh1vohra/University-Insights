@@ -58,8 +58,8 @@
             <h1 class="text-5xl font-bold">Apply Now for MBBS Abroad</h1>
             <p class="mt-4 text-lg">Start your journey towards a medical career today!</p>
             <a href="#lead-form"
-            class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">Get
-            Started</a>
+                class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">Get
+                Started</a>
         </div>
     </section>
 
@@ -76,34 +76,68 @@
         </ul>
     </section>
 
-    <!-- Top Countries -->
-    <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
-        <h2 class="text-2xl font-bold mb-4 text-blue-700">Top Countries for MBBS</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇷🇺 Russia</div>
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇺🇿 Uzbekistan</div>
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇰🇿 Kazakhstan</div>
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇵🇭 Philippines</div>
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇬🇪 Georgia</div>
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇰🇬 Kyrgyzstan</div>
-            <div
-                class="p-4 bg-blue-50 rounded-lg shadow text-center font-semibold text-gray-700 hover:bg-blue-100 transition duration-300">
-                🇪🇬 Egypt</div>
+    <!-- Top Countries Section -->
+    <section class="py-10 bg-gray-100">
+        <h2 class="text-2xl font-bold text-center mb-6">Top Countries for MBBS</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+            <!-- Russia -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./russia.jpg" alt="Russia" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Russia</h3>
+                    <p class="text-sm text-gray-600">Affordable education and world-class medical training.</p>
+                </div>
+            </div>
+
+            <!-- Uzbekistan -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./uzbekistan.jpg" alt="Uzbekistan" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Uzbekistan</h3>
+                    <p class="text-sm text-gray-600">Modern universities with global recognition.</p>
+                </div>
+            </div>
+
+            <!-- Kazakhstan -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./kazakhstan.jpg" alt="Kazakhstan" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Kazakhstan</h3>
+                    <p class="text-sm text-gray-600">Quality medical education at lower tuition fees.</p>
+                </div>
+            </div>
+
+            <!-- Philippines -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./philippines.jpg" alt="Philippines" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Philippines</h3>
+                    <p class="text-sm text-gray-600">US-based curriculum with English-medium instruction.</p>
+                </div>
+            </div>
+
+            <!-- Georgia -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./georgia.jpg" alt="Georgia" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Georgia</h3>
+                    <p class="text-sm text-gray-600">Top-ranked universities and affordable cost of living.</p>
+                </div>
+            </div>
+
+            <!-- Kyrgyzstan -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./kyrgyzstan.jpg" alt="Kyrgyzstan" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Kyrgyzstan</h3>
+                    <p class="text-sm text-gray-600">Recognized medical universities with low tuition fees.</p>
+                </div>
+            </div>
+
         </div>
     </section>
-
     <!-- Admission Process -->
     <section class="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-md mt-8">
         <h2 class="text-2xl font-bold mb-4 text-blue-700">Admission Process & Eligibility</h2>
@@ -146,22 +180,22 @@
         document.addEventListener("DOMContentLoaded", function () {
             let slides = document.querySelectorAll(".slider img");
             let currentIndex = 0;
-    
+
             function showNextSlide() {
                 slides[currentIndex].classList.remove("opacity-100");
                 slides[currentIndex].classList.add("opacity-0");
-    
+
                 currentIndex = (currentIndex + 1) % slides.length;
-    
+
                 slides[currentIndex].classList.remove("opacity-0");
                 slides[currentIndex].classList.add("opacity-100");
             }
-    
+
             slides[0].classList.add("opacity-100"); // Make the first image visible
             setInterval(showNextSlide, 4000); // Change slide every 4 seconds
         });
     </script>
-    
+
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (event) {
